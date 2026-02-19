@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "revision": 1,
+  "modules": [
+    {
+      "logical-name": "std",
+      "source-path": "/home/mccakit/dev/libcxx/riscv32-unknown-none-elf/share/libc++/v1/std.cppm",
+      "is-std-library": true,
+      "local-arguments": {
+        "system-include-directories": [
+          "/home/mccakit/dev/libcxx/riscv32-unknown-none-elf/share/libc++/v1"
+        ]
+      }
+    },
+    {
+      "logical-name": "std.compat",
+      "source-path": "/home/mccakit/dev/libcxx/riscv32-unknown-none-elf/share/libc++/v1/std.compat.cppm",
+      "is-std-library": true,
+      "local-arguments": {
+        "system-include-directories": [
+          "/home/mccakit/dev/libcxx/riscv32-unknown-none-elf/share/libc++/v1"
+        ]
+      }
+    }
+  ]
+}
