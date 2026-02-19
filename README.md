@@ -1,6 +1,6 @@
 # ch32v307_sdk
 To build the example you need to bring your own clang and lld, also you need wchisp. I used clang 23.
-cd example/cmake
+cd example/cmake/blink
 cmake -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE="./toolchains"
 cmake --build build
 llvm-objcopy -O binary   --only-section=.init   --only-section=.vector   --only-section=.text   --only-section=.fini   --only-section=.preinit_array   --only-section=.init_array   --only-section=.fini_array   --only-section=.ctors   --only-section=.dtors   --only-section=.dlalign   --only-section=.data   --only-section=.got   build/main ./build/main.bin
